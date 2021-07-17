@@ -1,0 +1,28 @@
+#article-custom-list ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+#article-custom-list li {
+  counter-increment: section;
+}
+
+#article-custom-list li:before {
+  content: counters(section, ".");
+}
+
+#article-custom-list li:before {
+  font-size: 1.2rem;
+  font-family: "Abril Fatface", serif;
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+#article-custom-list li {
+  margin-top: 20px;
+}
+
+#article-custom-list .heading {
+  color: #ffffff;
+  font-size: 22px;
+}
